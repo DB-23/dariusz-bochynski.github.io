@@ -1,0 +1,9 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    path[Attributes Style] {
+      fill: currentColor;
+      d: path("M 256 512 c 141.4 0 256 -114.6 256 -256 S 397.4 0 256 0 S 0 114.6 0 256 S 114.6 512 256 512 Z");
+    }
+  </style>
+  <path class="Attributes Style"/>
+</svg>
