@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Dariusz Bochyński" />
+    <title>Sklep BOGDANKA LUK Lublin</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/herb.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/tabs.css" rel="tabs" />
+
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top"><h3><img src="images/herb.png" alt="LKPS"> Bogdanka LUK Lublin</h3></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Strona główna</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#formularz">Formularz</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Usługi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Mapa</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead2">
+    <div class="container">
+        <div class="masthead-subheading">Niestety mamy braki na magazynie</div>
+        <div class="masthead-heading text-uppercase">Zapisz się na liste, wkrótce się odezwiemy</div>
+        <a class="btn btn-primary btn-xl text-uppercase" href="#services">Inne usuługi</a>
+    </div>
+</header>
+
+<section class="page-section" id="formularz">
+    <div class="container">
+        <div class="text-center">
+            <h2>Zapisz się na listę, wkrótce się z Tobą skontaktujemy</h2>
+            <form id="dataForm">
+                <div class="form-group">
+                    <label for="firstName">Imię:</label>
+                    <br>
+                    <input type="text" id="firstName" name="firstName" required minlength="2" maxlength="50">
+
+
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Nazwisko:</label>
+                    <br>
+                    <input type="text" id="lastName" name="lastName" required minlength="2" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Płeć:</label>
+                    <br>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Wybierz płeć</option>
+                        <option value="male">Mężczyzna</option>
+                        <option value="female">Kobieta</option>
+                        <option value="other">Inna</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Czy jest kibicem:</label>
+                    <br>
+                    <div class="radio-group">
+                        <label for="isFanYes">
+                            <input type="radio" id="isFanYes" name="isFan" value="yes" required> Tak
+                        </label>
+                        <label for="isFanNo">
+                            <input type="radio" id="isFanNo" name="isFan" value="no" required> Nie
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group-textarea">
+                    <label for="message">Wiadomość (opcjonalnie):</label>
+                    <br>
+                    <textarea id="message" name="message" rows="4" maxlength="500"></textarea>
+                </div>
+
+
+
+
+
+
+
+
+
+                <button type="submit">Zapisz się</button>
+            </form>
+            <br>
+            <h2>Lista zapisanych</h2>
+            <div class="table-bordered">
+                <table id="dataTable" >
+                    <thead>
+                    <tr>
+                        <th>Imię</th>
+                        <th>Nazwisko</th>
+                        <th>Email</th>
+                        <th>Płeć</th>
+                        <th>Kibic</th>
+                        <th>Wiadomość</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Data will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            <script src="js/localstorage.js"></script>
+        </div>
+
+    </div>
+</section>
+
+<!-- Services-->
+<section class="page-section" id="services">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">BOGDANKA LUK LUBLIN</h2>
+            <h3 class="section-subheading text-muted">Zobacz czego możesz u nas doświadczyć</h3>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <a href="index.html?_ijt=ok3gu5thapgc7b34qn2rlqrkv4#portfolio">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                <h4 class="my-3"><a class="nav-link" href="index.html?_ijt=ok3gu5thapgc7b34qn2rlqrkv4#portfolio">Sklep klubowy</a> </h4>
+                <p class="text-muted">W tym miejscu zaopatrzysz się we wszystkie potrzebne artykuły sygnowane herbem Naszego klubu. Co jakiś czas pojawiać sie będą nowe ofety.</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="index.html?_ijt=ok3gu5thapgc7b34qn2rlqrkv4#team">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+                        </span>
+                <h4 class="my-3"><a class="nav-link" href="index.html?_ijt=ok3gu5thapgc7b34qn2rlqrkv4#team">Nasz skład</a></h4>
+                <p class="text-muted">Zobacz zespół, który jest w stanie wiele osiągnąć. Sprawdź oficjalne statystyki lub odweidź profile Naszych gwiazd na Instagramie.</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="gallery.html">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-camera fa-stack-1x fa-inverse"></i>
+                        </span>
+                <h4 class="my-3"><a class="nav-link" href="gallery.html">Galeria</a></h4>
+                <p class="text-muted">Zobacz fotorelacje Naszej drużyny. Przeżyj meczowe emocje jeszcze raz, dzięki Naszym materiałom video jest to teraz możliwe. </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Sponsorzy-->
+<div class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://luk.lublin.pl/"><img class="img-fluid img-brand d-block mx-auto" src="images/sponsors/luk-logo-30lat_150.webp" alt="LUK" aria-label="LUK Logo" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://lw.com.pl/"><img class="img-fluid img-brand d-block mx-auto" src="images/sponsors/bogdanka_logo.jpg" alt="Bogdanka" aria-label="BOGDANKA Logo" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://lublin.eu/"><img class="img-fluid img-brand d-block mx-auto" src="images/sponsors/LOGO_LUBLIN.svg" alt="Lublin" aria-label="Lublin Logo" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://www.lubelskie.pl/"><img class="img-fluid img-brand d-block mx-auto" src="images/sponsors/lubelskiewojewodztwo-logo.png" alt="Lubelskie" aria-label="Lubelskie Logo" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact-->
+<section class="page-section" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">BOGDANKA LUK Lublin</h2>
+            <h3 class="section-subheading text-muted">2023/2024</h3>
+            <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2497.934777281538!2d22.52970207660401!3d51.2386960717534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722577e1be35737%3A0x9a4ef7a2577452e0!2sHala%20Globus%20im.%20Tomasza%20W%C3%B3jtowicza!5e0!3m2!1spl!2spl!4v1716214011443!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">Copyright &copy; Dariusz Bochyński 2024</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://x.com/LukLublin/status/1791807781554504144" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/LUKLublin" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/bogdanka_luk_lublin/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/@LKPSLublinTV" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a class="link-dark text-decoration-none me-3" href="https://pollub.pl">Polityka Prywatności</a>
+                <a class="link-dark text-decoration-none" href="https://pollub.pl">Warunki Użytkowania</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<!-- * *                               SB Forms JS                               * *-->
+<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
